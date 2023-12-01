@@ -1,5 +1,7 @@
 # Autodifferentiator
 
+## Overview
+
 Simple autodifferentiator package built from scratch.  Currently contains operations for:
 - Addition / subtraction / multiplication of scalars and numpy arrays 
 - Arbitrary contractions of two tensors
