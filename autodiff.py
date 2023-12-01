@@ -363,5 +363,3 @@ def index_mapper(A_forward, B_forward, num_A_ind):
     undo_map_list = [total_mapping[i] for i in range(len(total_mapping))]
 
     return undo_map_list
-
-print('test')
