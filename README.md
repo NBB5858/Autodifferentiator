@@ -10,7 +10,8 @@ Simple autodifferentiator package built from scratch.  Currently contains operat
 
 Basically, it includes everything you would need for logistic regression. _Classifier.ipynb_ is a jupyter notebook
 showing a few test cases. It culminates by using the autodifferentiator in a logistic regression model trained on the 
-[FashionMNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist) dataset.
+[FashionMNIST](https://www.kaggle.com/datasets/zalando-research/fashionmnist) dataset.  The main goal of this work was to implement a simple ML completely from scratch, 
+without using any ML libraries (except to import data).
 
 
 
