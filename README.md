@@ -84,11 +84,11 @@ $$(r_1, j_0), (r_3, j_1), (r_2, d_1), (r_0, d_0),$$
 
 and our dictionary total_mapping reads $\{1:0, 3:1, 2:2, 0:3\}$.
 
-This is this mapping that we are trying to undo. We want to return the list $[3,0,2,1]$, which we get by seeing that the $3$rd element in the our final ordering is $r_0$, the $0$th element is $r_1$, the $2$nd element is $r_2$, and the $1$st element is $r_3$. We plug this into __np.transpose__ like
+This is this mapping that we are trying to undo. We want to return the list $[3,0,2,1]$, which we get by seeing that the 3rd element in the our final ordering is $r_0$, the 0th element is $r_1$, the 2nd element is $r_2$, and the 1st element is $r_3$. We plug this into __np.transpose__ like
 
 $$\text{np.transpose}(\text{tensor}, \text{axes}=([3,0,2,1])),$$
 
-which means that $3$rd axis will be mapped to the $0$th one, the $0$th axis will be mapped to the $1$st, the $2$nd will be mapped to the $2$nd, and the $1$st will be mapped to the $3$rd, which puts the axes in the same order as $\frac{\partial}{\partial A_{r_0 r_1 r_2 r_3}}$.  The line of code with does this is 
+which means that 3rd axis will be mapped to the 0th one, the 0th axis will be mapped to the 1st, the 2nd will be mapped to the 2nd, and the 1st will be mapped to the 3rd, which puts the axes in the same order as $\frac{\partial}{\partial A_{r_0 r_1 r_2 r_3}}$.  The line of code with does this is 
 
 
 
